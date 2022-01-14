@@ -50,5 +50,5 @@ If your project failed to resolve the dependency, try to add the following repos
 TODO: Working in Process
 
 
-## 备注
+## 备注（新增）
 1.0.6 版本是从分支eee9966 check过来的，只是增加了注释，只为和dubbo源码来理解dubbo和spring源码结合使用。
