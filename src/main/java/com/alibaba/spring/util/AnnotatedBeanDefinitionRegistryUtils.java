@@ -80,12 +80,13 @@ public abstract class AnnotatedBeanDefinitionRegistryUtils {
     }
 
     /**
+     * 注册bean
      * Register Beans if not present in {@link BeanDefinitionRegistry registry}
      *
      * @param registry         {@link BeanDefinitionRegistry}
      * @param annotatedClasses {@link Annotation annotation} class
      */
-    public static void registerBeans(BeanDefinitionRegistry registry, Class<?>... annotatedClasses) {
+    public static void registerBeans(BeanDefinitionRegistry registry, Class<?>... annotatedClasses) { // 这里就是DubboConfigConfiguration.Single.class、DubboConfigConfiguration.Multiple.class。还有可能是其他注解
 
         if (ObjectUtils.isEmpty(annotatedClasses)) {
             return;
